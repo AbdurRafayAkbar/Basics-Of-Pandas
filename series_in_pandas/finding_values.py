@@ -6,4 +6,3 @@ print(series)
 beginnig_value=series.loc[0]
 print(f"Beginnig value is : {beginnig_value}")
 
-
