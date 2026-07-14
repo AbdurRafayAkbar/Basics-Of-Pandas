@@ -5,8 +5,17 @@ data={
     "age":[22,20,25]
 }
 
-pd=pd.DataFrame(data)
+df=pd.DataFrame(data)
 
-pd["salary"]=[25552,155521,616311]
+#Add a new column
+df["salary"]=[25552,155521,616311]
 
-print(pd)
+# Add new row
+
+new_row=pd.DataFrame([{
+    "name":"Haji",
+    "age":51,
+    "salary":5111221,
+}])
+df=pd.concat([df,new_row],ignore_index=True)
+print(df)
